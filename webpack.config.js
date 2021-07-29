@@ -13,9 +13,6 @@ module.exports = {
             use: 'ts-loader',
             exclude: /node_modules/,
           },
-        ],
-        loaders: [
-          {exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/},
         ]
     },
     resolve: {
@@ -38,7 +35,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    watch: true,
     watchOptions: {
         ignored: '**/node_modules',
       },
